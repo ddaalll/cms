@@ -1,4 +1,4 @@
-package com.zerobase.cms.Controller;
+package com.zerobase.cms.controller;
 
 import com.zerobase.cms.application.SignUpApplication;
 import com.zerobase.cms.domain.SignUpForm;
