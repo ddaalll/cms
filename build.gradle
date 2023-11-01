@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.6.5'
+    id 'org.springframework.boot' version '2.6.3'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
@@ -25,6 +25,9 @@ ext{
 }
 
 dependencies {
+
+    implementation project(path: ":zerobase-domain",configuration: 'default')
+
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -32,7 +35,7 @@ dependencies {
 
     testImplementation 'com.h2database:h2'
 
-//    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

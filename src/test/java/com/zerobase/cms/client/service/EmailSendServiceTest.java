@@ -1,5 +1,6 @@
 package com.zerobase.cms.client.service;
 
+import com.zerobase.cms.client.MailgunClient;
 import com.zerobase.cms.service.EmailSendService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,8 @@ class EmailSendServiceTest {
 
     @Test
     public void EmailTest(){
+//        mailgunClient.sendEmail(null);
         String response = emailSendService.sendEmail();
         System.out.println(response);
     }
-
 }

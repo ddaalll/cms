@@ -11,6 +11,7 @@ import java.util.Locale;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,7 +28,7 @@ public class Customer extends BaseEntity {
     private String phone;
     private LocalDate birth;
 
-    private LocalDateTime verifyExpiredAty;
+    private LocalDateTime verifyExpiredAt;
     private String verificationCode;
     private boolean verify = false;
 
